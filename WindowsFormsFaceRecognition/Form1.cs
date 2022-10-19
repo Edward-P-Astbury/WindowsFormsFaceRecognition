@@ -19,8 +19,8 @@ namespace WindowsFormsFaceRecognition
         FaceRecognition faceRecognition;
         IFaceClient client;
 
-        const string SUBSCRIPTION_KEY = "f62f058045694f2dbb6bf9a57551f36d";
-        const string ENDPOINT = "https://edwardfaceapidemo.cognitiveservices.azure.com/";
+        const string SUBSCRIPTION_KEY = "";
+        const string ENDPOINT = "";
         const string RECOGNITION_MODEL4 = RecognitionModel.Recognition04;
 
         public Form1()

@@ -33,13 +33,11 @@ namespace WindowsFormsFaceRecognition
         private bool faceDetectionOn = false; // allow for the saving of images and thus face detection
         private List<string> names = new List<string>();
         private EigenFaceRecognizer eigenFaceRecognizer; // facial recognition class that works with grayscale images
-        // private IContainer components = null; Remove
-
+        
         public bool FaceDetectionOn { get => faceDetectionOn; set => faceDetectionOn = value; }
 
         public FaceRecognition()
         {
-            //InitializeComponent(); Remove
             if (!Directory.Exists(Environment.CurrentDirectory + "\\Image"))
             {
                 Directory.CreateDirectory(Environment.CurrentDirectory + "\\Image");
@@ -178,29 +176,5 @@ namespace WindowsFormsFaceRecognition
                 // error handling
             }
         }
-        // Remove
-        /*
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && components != null)
-            {
-                components.Dispose();
-            }
-
-            base.Dispose(disposing);
-        }
-        */
-        /*
-        private void InitializeComponent()
-        {
-            SuspendLayout();
-            base.AutoScaleDimensions = new System.Drawing.SizeF(8f, 16f);
-            base.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            base.ClientSize = new System.Drawing.Size(800, 450);
-            base.Name = "FaceRecognition";
-            Text = "FaceRecognition";
-            ResumeLayout(false);
-        }
-        */
     }
 }
